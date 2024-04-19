@@ -32,4 +32,7 @@ public interface HomepageMainMapper {
 	//센터 검색
 	List<EgovMap> getCenterList(CenterVO centerVO);
 	
+	// 유관기관
+	List<EgovMap> getRelatedCenter(String reloadtName);
+	
 }
