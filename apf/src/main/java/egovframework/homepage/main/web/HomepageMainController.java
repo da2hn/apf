@@ -2,7 +2,9 @@ package egovframework.homepage.main.web;
 
 import java.security.Key;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -15,10 +17,9 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springmodules.validation.commons.DefaultBeanValidator;
 
-import ams.cmm.AES256Crypto;
 import egovframework.homepage.cmSpace.service.CmSpaceVO;
 import egovframework.homepage.cmSpace.service.HomepageCmSpaceService;
 import egovframework.homepage.main.service.CenterVO;
@@ -348,4 +349,24 @@ public class HomepageMainController {
 
 		return "/layout/siteMap.page";
 	}
+	
+	@RequestMapping(value = "/relatedCenterAjax.do")
+	public String getRelatedCenter(ModelMap model, HttpServletRequest request) throws Exception {
+		
+		EgovMap map = (EgovMap)request.getSession().getAttribute("LoginVO");
+		model.addAttribute("loginVo",map);
+		
+		String reloadtName = request.getParameter("reloadtName");
+		
+		System.out.println("reloadtName : "+reloadtName);
+		
+		List<EgovMap> resultList = homepageMainService.getRelatedCenter(reloadtName);
+		
+		model.addAttribute("resultMessage", "성공적으로 데이터를 전달합니다.");
+		model.addAttribute("resultList", resultList);
+		
+
+		return "jsonView";
+	}
+	
 }

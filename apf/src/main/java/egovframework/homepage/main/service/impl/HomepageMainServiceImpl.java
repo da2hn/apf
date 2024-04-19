@@ -74,5 +74,10 @@ public class HomepageMainServiceImpl extends EgovAbstractServiceImpl implements 
 	public List<EgovMap> getCenterList(CenterVO centerVO) {
 		return homepageMainMapper.getCenterList(centerVO);
 	}
+
+	@Override
+	public List<EgovMap> getRelatedCenter(String reloadtName) {
+		return homepageMainMapper.getRelatedCenter(reloadtName);
+	}
 	
 }
