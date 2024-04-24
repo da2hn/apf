@@ -6,7 +6,7 @@
 	<div class="container">
 		<dl>
 			<dt>센터소개</dt>
-			<dd class="explanation">마음으로 만나는 어르신과 중장년의 행복한 노후</dd>
+			<dd class="explanation">마음으로 만나는 어르신과 베이비부머의 행복한 노후</dd>
 			<dd class="explanEng">GNOIN Hall Introdution</dd>
 		</dl>
 	</div>

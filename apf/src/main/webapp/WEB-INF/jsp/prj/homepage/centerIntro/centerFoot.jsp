@@ -39,7 +39,7 @@
 	<div class="container">
 		<dl>
 			<dt>센터소개</dt>
-			<dd class="explanation">마음으로 만나는 어르신과 중장년의 행복한 노후</dd>
+			<dd class="explanation">마음으로 만나는 어르신과 베이비부머의 행복한 노후</dd>
 			<dd class="explanEng">GNOIN Hall Introdution</dd>
 		</dl>
 	</div>
@@ -47,7 +47,7 @@
 <section class="service-2 section" style="margin-top:-14px;">
 	<div id="wrap">
 		<div style="width: 100%; margin: auto; text-align: center; margin-top: 30px; margin-bottom: 30px;">
-			<button type="button" class="btn btn-primary sub-menu" onclick="javascript: pathwayBtn('1')"><font size = "4px">2020 ~ 2023</font></button>
+			<button type="button" class="btn btn-primary sub-menu" onclick="javascript: pathwayBtn('1')"><font size = "4px">2020 ~ 2024</font></button>
 			<button type="button" class="btn btn-primary sub-menu" onclick="javascript: pathwayBtn('2')"><font size = "4px">2018 ~ 2019</font></button>
 			<button type="button" class="btn btn-primary sub-menu" onclick="javascript: pathwayBtn('3')"><font size = "4px">2016 ~ 2017</font></button>
 			<button type="button" class="btn btn-primary sub-menu" onclick="javascript: pathwayBtn('4')"><font size = "4px">1999 ~ 2012</font></button>
@@ -56,6 +56,28 @@
 		<div id="pathwayBtn1" class="menu">
 			<div class="content">
 				<div class="yearhistory">
+				
+					<p><span> 2024 </span></p>
+					<ul>
+						<li>
+							<strong>4월</strong>
+							<span>경기노인 누구나 누리는 마음돌봄체계 구축 ‘은둔·고립 남성’ 노인+중장년 희망네트워크사업 운영 </span>
+						</li>
+						
+						<li>
+							<strong>3월</strong>
+							<span>노인성인지교육사업 경기남부노인보호전문기관 이관<br>
+								  베이비부머 마음돌봄 전화상담 지원 사업 재개
+							</span>
+						</li>
+						<li>
+							<strong>1월</strong>
+							<span>(사)한국노인상담학회 업무협약<br/> 
+								김향자 센타장 취임
+							</span>
+						</li>
+					</ul>
+				
 					<p><span> 2023 </span></p>
 					<ul>
 						<li>

@@ -14,7 +14,7 @@
 	<div class="container">
 		<dl>
 			<dt>센터소개</dt>
-			<dd class="explanation">마음으로 만나는 어르신과 중장년의 행복한 노후</dd>
+			<dd class="explanation">마음으로 만나는 어르신과 베이비부머의 행복한 노후</dd>
 			<dd class="explanEng">GNOIN Hall Introdution</dd>
 		</dl>
 	</div>
@@ -31,10 +31,10 @@
 			</li>
 			<li class="depth3">
 				<ul>
+					<li><p class="label">노인상담운영팀</p></li>
 					<li><p class="label">노인상담지원팀</p></li>
 					<li><p class="label">노인온상담팀</p></li>
-					<li><p class="label">노인성인지교육팀</p></li>
-					<li><p class="label">중장년상담팀</p></li>
+					<li><p class="label">베이비부머상담팀</p></li>
 				</ul>
 			</li>
 		</ul>
@@ -63,7 +63,7 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td rowspan="31">경기도노인종합상담센터</td>
+							<td rowspan="29">경기도노인종합상담센터</td>
 							<td>센터장</td>
 							<td>센터장</td>
 							<td>김향자</td>
@@ -71,23 +71,11 @@
 							<td>070-4832-6360</td>
 						</tr>
 						<tr>
-							<td rowspan="4">노인상담지원팀</td>
+							<td rowspan="3">노인상담운영팀</td>
 							<td>팀장</td>
 							<td>오명심</td>
 							<td>센터 사업 총괄, 센터 복무 및 인사관리</td>
 							<td>070-4832-6361</td>
-						</tr>
-						<tr>
-							<td>과장</td>
-							<td>박수경</td>
-							<td>노인상담센터 DB 및 성과관리 총괄</td>
-							<td>070-4832-6362</td>
-						</tr>
-						<tr>
-							<td>주임</td>
-							<td>김현지</td>
-							<td>상담지원사업, 교육지원사업, 외부지원사업</td>
-							<td>070-4832-6363</td>
 						</tr>
 						<tr>
 							<td>주임</td>
@@ -96,24 +84,31 @@
 							<td>031-222-1360</td>
 						</tr>
 						<tr>
-							<td rowspan="3">노인성인지교육팀</td>
+							<td>주임</td>
+							<td>김현지</td>
+							<td>육아휴직</td>
+							<td>-</td>
+						</tr>
+
+						<tr>
+							<td rowspan="3">노인상담지원팀</td>
 							<td>팀장</td>
 							<td>신형상</td>
-							<td>노인성인지교육사업 총괄, 센터 홍보사업 총괄</td>
+							<td>노인상담지원팀 총괄</td>
+							<td>070-4949-6385</td>
+						</tr>
+						<tr>
+							<td>과장</td>
+							<td>박수경</td>
+							<td>노인상담센터 DB 및 성과관리 총괄</td>
 							<td>070-4949-6385</td>
 						</tr>
 						<tr>
 							<td>주임</td>
 							<td>이한결</td>
-							<td>노인성인지교육사업 진행, 센터 홍보사업</td>
-							<td>070-4949-6386</td>
-						</tr>
-						<tr>
-							<td colspan="2">노인성인지교육사(위촉)-23명</td>
-							<td>노인성인지교육</td>
-							<td>-</td>
-						</tr>
-						
+							<td>시군노인상담센터 상담지원사업, 교육지원사업</td>
+							<td>070-4832-6363</td>
+						</tr>						
 						<tr>
 							<td rowspan="17">노인온(ON-溫)상담팀<br/>1833-2255</td>
 							<td>팀장</td>
@@ -125,25 +120,25 @@
 							<td>주임</td>
 							<td>손영지</td>
 							<td>노인온(ON-溫)상담사</td>
-							<td>031-222-1390</td>
+							<td>1833-2255</td>
 						</tr>
 						<tr>
 							<td>주임</td>
 							<td>원지혜</td>
 							<td>노인온(ON-溫)상담사</td>
-							<td>031-222-1390</td>
+							<td>1833-2255</td>
 						</tr>
 						<tr>
 							<td>주임</td>
 							<td>김영화</td>
 							<td>노인온(ON-溫)상담사</td>
-							<td>031-222-1390</td>
+							<td>1833-2255</td>
 						</tr>
 						<tr>
 							<td>주임</td>
 							<td>한재은</td>
 							<td>노인온(ON-溫)상담사</td>
-							<td>031-222-1390</td>
+							<td>1833-2255</td>
 						</tr>
 						<tr>
 							<td>상담사</td>
@@ -219,33 +214,33 @@
 						</tr>
 						
 						<tr>
-							<td rowspan="5">중장년상담팀 <br/> 031-269-5064</td>
+							<td rowspan="5">베이비부머상담팀 <br/> 031-269-5064</td>
 							<td>팀장</td>
-							<td>공석</td>
+							<td>정혜읜</td>
 							<td>중장년상담사업 총괄</td>
 							<td>070-4949-6216</td>
 						</tr>
 						<tr>
 							<td>주임</td>
-							<td>공석</td>
+							<td>노경자</td>
 							<td>중장년상담사업 회계 및 총무</td>
 							<td>070-4949-6213</td>
 						</tr>
 						<tr>
 							<td>주임</td>
-							<td>공석</td>
+							<td>김보연</td>
 							<td>중장년상담사업 사례관리</td>
 							<td>070-4949-6212</td>
 						</tr>
 						<tr>
 							<td>주임</td>
-							<td>공석</td>
+							<td>한창균</td>
 							<td>중장년 상담사</td>
 							<td>070-4949-6215</td>
 						</tr>
 						<tr>
 							<td>주임</td>
-							<td>공석</td>
+							<td>김미옥</td>
 							<td>중장년 상담사</td>
 							<td>070-4949-6214</td>
 						</tr>

@@ -1274,7 +1274,7 @@ th, td {
 								data-toggle="dropdown">사업소개<i class="fa fa-angle-down"></i></a>
 								<ul class="dropdown-menu" role="menu">
 									<li class="dropdown-item">
-						                <a href="/gnoincoun/sigunSupport.do">시군지원사업
+						                <a href="/gnoincoun/sigunSupport.do">노인상담지원사업
 						                <i class="fa fa-caret-right"></i></a>
 					                </li>
 									<li class="dropdown-item">
@@ -1282,13 +1282,13 @@ th, td {
 										<i class="fa fa-caret-right"></i></a>
 									</li>
 									<li class="dropdown-item">
-										<a href="/gnoincoun/middleCns.do">중장년마음돌봄 전화상담
+										<a href="/gnoincoun/middleCns.do">베이비부머 마음돌봄 전화상담
 										<i class="fa fa-caret-right"></i></a>
 									</li>
-									<li class="dropdown-item">
+									<!-- <li class="dropdown-item">
 										<a href="/gnoincoun/genderEdu.do">성인지교육사업
 										<i class="fa fa-caret-right"></i></a>
-									</li>
+									</li>-->
 								</ul></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">소통의 공간
@@ -1306,10 +1306,10 @@ th, td {
 										<a href="/gnoincoun/docLibraryList.do">문서자료실
 										<i class="fa fa-caret-right"></i></a>
 									</li>
-									<li class="dropdown-item">
+									<!--<li class="dropdown-item">
 										<a href="/gnoincoun/freeBoardList.do">자유게시판
 										<i class="fa fa-caret-right"></i></a>
-									</li>
+									</li> -->
 									<li class="dropdown-item">
 										<a href="/gnoincoun/onlineCnsList.do">온라인상담
 										<i class="fa fa-caret-right"></i></a>
@@ -1322,10 +1322,10 @@ th, td {
 										<a href="/gnoincoun/psyInfo.do">간편한 심리검사
 										<i class="fa fa-caret-right"></i></a>
 									</li>
-									<li class="dropdown-item">
+									<!--  <li class="dropdown-item">
 										<a href="/gnoincoun/eduAppWrite.do">교육신청
 										<i class="fa fa-caret-right"></i></a>
-									</li>
+									</li>-->
 								</ul>
 							</li>
 						</ul>
@@ -1339,7 +1339,7 @@ th, td {
 		<div class="main-content" style="width: 1300px; margin: 0 auto;">
 			<div class='banner-box-01'>
 				<li><a href="/gnoincoun/salutation.do"><img
-						src="/gnoincoun/images/banner_01.png" alt="이렇게 이용하세요" /></a></li>
+						src="/gnoincoun/images/banner_01.png" alt="센터소개" style="width:265px; height:200px;"/></a></li>
 				<li><a href="/gnoincoun/psyInfo.do"><img
 						src="/gnoincoun/images/banner_02.png" alt="간편한 심리검사" /></a></li>
 				<li><a href="/gnoincoun/comfCnsWrite.do"><img
@@ -1356,10 +1356,10 @@ th, td {
 						src="/gnoincoun/images/banner_06.png" alt="시군지원사업" /></a></li>
 				<li><a href="/gnoincoun/busiIntroList.do?gubun=noin"><img
 						src="/gnoincoun/images/banner_07.png" alt="24시노인온상담" /></a></li>
-				<li><a href="/gnoincoun/busiIntroList.do?gubun=gender"><img
-						src="/gnoincoun/images/banner_08.png" alt="성인지교육사업" /></a></li>
+				<!--  <li><a href="/gnoincoun/busiIntroList.do?gubun=gender"><img
+						src="/gnoincoun/images/banner_08.png" alt="성인지교육사업" /></a></li> -->
 				<li><a href="/gnoincoun/busiIntroList.do?gubun=mid"><img
-						src="/gnoincoun/images/banner_09.png" alt="중장년상담" /></a></li>
+						src="/gnoincoun/images/banner_09.png" alt="중장년상담" style = "width:310px; height:190px;"/></a></li>
 			</div>
 		</div>
 
@@ -1743,14 +1743,8 @@ th, td {
 					</div>
 					
 					<div class="swiper-slide">
-						<a href="https://noininfo.or.kr/">
+						<a href="http://www.noininfo.or.kr/">
 							<img src="/gnoincoun/images/site_15.png" alt="경기도노인복지시설엽합회" />
-						</a>
-					</div>
-					
-					<div class="swiper-slide">
-						<a href="https://happycam5060.or.kr:45870/">
-							<img src="/gnoincoun/images/site_16.png" alt="경기도중장년해피캠퍼스 남부센터" />
 						</a>
 					</div>
 					
@@ -1813,8 +1807,8 @@ th, td {
 						<option value="http://www.gaswc.or.kr/">경기도노인종합복지관협회</option>
 						<option value="https://gyeonggi.nid.or.kr/home/main/main.aspx/">경기도광역치매센터</option>
 						<option value="http://www.kgacold.co.kr/">경기도재가노인복지협회</option>
-						<option value="https://noininfo.or.kr/">경기도노인복지시설엽합회</option>
-						<option value="https://happycam5060.or.kr:45870/">경기도중장년해피캠퍼스 남부센터</option>
+						<option value="http://noininfo.or.kr/">경기도노인복지시설엽합회</option>
+						<!-- <option value="https://happycam5060.or.kr:45870/">경기도중장년해피캠퍼스 남부센터</option> -->
 						<option value="https://www.mentalhealth.or.kr/">경기도정신건강복지센터</option>
 						<option value="http://www.mohw.go.kr/">보건복지부</option>
 						<option value="https://ggscw.or.kr/">경기도장기요양요원지원센터</option>
@@ -1825,10 +1819,10 @@ th, td {
 			</div>
 			<div class='footer-bottom'>
 				<div class='wrap'>
-					<span><a href="">이용약관</a></span>
+					<!--<span><a href="">이용약관</a></span> -->
 					<span><a href="/gnoincoun/noticeDtl.do?num=57">개인정보취급방침</a></span>
 					<span><a href="/gnoincoun/noticeDtl.do?num=60">이메일추출방지정책</a></span>
-					<span><a href="/gnoincoun/noticeDtl.do?num=61">장애인차별금지법</a></span>
+					<!--<span><a href="/gnoincoun/noticeDtl.do?num=61">장애인차별금지법</a></span>-->
 					<span><a href="/gnoincoun/directions.do">찾아오시는 길</a></span>
 					<span class='copyright'>Copyright (c) 2021 GNOIN. All rights reserved.</span>
 				</div>

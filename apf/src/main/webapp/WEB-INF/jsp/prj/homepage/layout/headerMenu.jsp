@@ -99,7 +99,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">사업소개<i class="fa fa-angle-down"></i></a>
               <ul class="dropdown-menu"  role="menu">
                 <li class="dropdown-item">
-	                <a href="/gnoincoun/sigunSupport.do">시군지원사업
+	                <a href="/gnoincoun/sigunSupport.do">노인상담지원사업
 	                <i class="fa fa-caret-right"></i></a>
                 </li>
 				<li class="dropdown-item">
@@ -107,13 +107,13 @@
 					<i class="fa fa-caret-right"></i></a>
 				</li>
 				<li class="dropdown-item">
-					<a href="/gnoincoun/middleCns.do">중장년마음돌봄 전화상담
+					<a href="/gnoincoun/middleCns.do">베이비부머 마음돌봄 전화상담
 					<i class="fa fa-caret-right"></i></a>
 				</li>
-				<li class="dropdown-item">
+				<!--  <li class="dropdown-item">
 					<a href="/gnoincoun/genderEdu.do">성인지교육사업
 					<i class="fa fa-caret-right"></i></a>
-				</li>
+				</li>-->
               </ul>
             </li>
             <li class="dropdown">
@@ -122,11 +122,11 @@
                 <li class="dropdown-item"><a href="/gnoincoun/centerNewsList.do">센터소식<i class="fa fa-caret-right"></i></a></li>
                 <li class="dropdown-item"><a href="/gnoincoun/noticeList.do">공지사항<i class="fa fa-caret-right"></i></a></li>
                 <li class="dropdown-item"><a href="/gnoincoun/docLibraryList.do">문서자료실<i class="fa fa-caret-right"></i></a></li>
-                <li class="dropdown-item"><a href="/gnoincoun/freeBoardList.do">자유게시판<i class="fa fa-caret-right"></i></a></li>
+                <!--  <li class="dropdown-item"><a href="/gnoincoun/freeBoardList.do">자유게시판<i class="fa fa-caret-right"></i></a></li> -->
                 <li class="dropdown-item"><a href="/gnoincoun/onlineCnsList.do">온라인상담<i class="fa fa-caret-right"></i></a></li>
                 <li class="dropdown-item"><a href="/gnoincoun/comfCnsWrite.do">맘편한 상담<i class="fa fa-caret-right"></i></a></li>
                 <li class="dropdown-item"><a href="/gnoincoun/psyInfo.do">간편한 심리검사<i class="fa fa-caret-right"></i></a></li>
-                <li class="dropdown-item"><a href="/gnoincoun/eduAppWrite.do">교육신청<i class="fa fa-caret-right"></i></a></li>
+                <!-- <li class="dropdown-item"><a href="/gnoincoun/eduAppWrite.do">교육신청<i class="fa fa-caret-right"></i></a></li> -->
               </ul>
             </li>
           </ul>
