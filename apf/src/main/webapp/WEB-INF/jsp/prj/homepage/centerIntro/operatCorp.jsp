@@ -39,7 +39,7 @@
 	<div class="container">
 		<dl>
 			<dt>센터소개</dt>
-			<dd class="explanation">마음으로 만나는 어르신과 중장년의 행복한 노후</dd>
+			<dd class="explanation">마음으로 만나는 어르신과 베이비부머의 행복한 노후</dd>
 			<dd class="explanEng">GNOIN Hall Introdution</dd>
 		</dl>
 	</div>
@@ -57,7 +57,7 @@
 			</div>
 			
 			<div id="operating1" class="menu">
-				<img src='/gnoincoun/images/cenIntro6.jpg' alt="내방상담" style="width: 920px;"/>
+				<img src='/gnoincoun/images/cenIntro6.png' alt="내방상담" style="width: 920px;"/>
 			</div>
 			<div id="operating2" style="width: 920px; margin: auto;">
 				<img src='/gnoincoun/images/cenIntro15.png' alt="내방상담" style="width: 920px;"/> 
