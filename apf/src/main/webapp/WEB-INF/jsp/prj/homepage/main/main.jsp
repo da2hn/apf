@@ -1358,7 +1358,7 @@ th, td {
 						src="/gnoincoun/images/banner_07.png" alt="24시노인온상담" /></a></li>
 				<!--  <li><a href="/gnoincoun/busiIntroList.do?gubun=gender"><img
 						src="/gnoincoun/images/banner_08.png" alt="성인지교육사업" /></a></li> -->
-				<li><a href="/gnoincoun/busiIntroList.do?gubun=mid"><img
+				<li><a href="/gnoincoun/sigunSupport.do"><img
 						src="/gnoincoun/images/banner_09.png" alt="중장년상담" style = "width:310px; height:190px;"/></a></li>
 			</div>
 		</div>
@@ -1788,8 +1788,8 @@ th, td {
 					</div> -->
 					<div class='text-content'>
 						<p>경기도노인종합상담센터</p>
-						<div>16207  경기도 수원시 장안구 경수대로 1150, 도서관 3층     대표 : 김미나     고유번호 : 722-82-00367<br>
-							  전화 :  031-222-1360     팩스 : 070-4832-6366     이메일 :  ggnoincoun@gmail.com     개인정보담당자 : 신형상</div>
+						<div>16207  경기도 수원시 장안구 경수대로 1150, 건강증진센터 1층 고유번호 : 722-82-00367<br>
+							  전화 :  031-222-1360     팩스 : 070-4832-6366     이메일 :  ggnoincoun@gmail.com</div>
 					</div>
 					
 					<select class="selectpicker" onchange="if(this.value) window.open(this.value);" style="height:30px; float:right; position:relative; font-size:16px; appearance:menulist; color:black;">
