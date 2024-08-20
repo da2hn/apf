@@ -71,7 +71,7 @@
 					<i class="fa fa-caret-right"></i></a>
 				</li>
 				<li class="dropdown-item">
-					<a href="/gnoincoun/missionVis.do">미션과 비젼 
+					<a href="/gnoincoun/missionVis.do">미션과 비전 
 					<i class="fa fa-caret-right"></i></a>
 				</li>
 				<li class="dropdown-item">
@@ -79,13 +79,15 @@
 					<i class="fa fa-caret-right"></i></a>
 				</li>
 				<li class="dropdown-item">
-					<a href="/gnoincoun/peopleTg.do">함께하는 사람들
+					<a href="/gnoincoun/peopleTg.do">조직도
 					<i class="fa fa-caret-right"></i></a>
 				</li>
+				<%--
 				<li class="dropdown-item">
 					<a href="/gnoincoun/centerMap.do">시군센터
 					<i class="fa fa-caret-right"></i></a>
 				</li>
+				 --%>
 				<li class="dropdown-item">
 					<a href="/gnoincoun/directions.do">오시는길
 					<i class="fa fa-caret-right"></i></a>
@@ -103,11 +105,11 @@
 	                <i class="fa fa-caret-right"></i></a>
                 </li>
 				<li class="dropdown-item">
-					<a href="/gnoincoun/noin24.do">24시노인온상담
+					<a href="/gnoincoun/noin24.do">24시노인온상담사업
 					<i class="fa fa-caret-right"></i></a>
 				</li>
 				<li class="dropdown-item">
-					<a href="/gnoincoun/middleCns.do">베이비부머 마음돌봄 전화상담
+					<a href="/gnoincoun/middleCns.do">베이비부머 마음돌봄 전화상담 지원 사업
 					<i class="fa fa-caret-right"></i></a>
 				</li>
 				<!--  <li class="dropdown-item">
@@ -122,9 +124,9 @@
                 <li class="dropdown-item"><a href="/gnoincoun/centerNewsList.do">센터소식<i class="fa fa-caret-right"></i></a></li>
                 <li class="dropdown-item"><a href="/gnoincoun/noticeList.do">공지사항<i class="fa fa-caret-right"></i></a></li>
                 <li class="dropdown-item"><a href="/gnoincoun/docLibraryList.do">문서자료실<i class="fa fa-caret-right"></i></a></li>
-                <!--  <li class="dropdown-item"><a href="/gnoincoun/freeBoardList.do">자유게시판<i class="fa fa-caret-right"></i></a></li> -->
+                <!--  <li class="dropdown-item"><a href="/gnoincoun/f reeBoardList.do">자유게시판<i class="fa fa-caret-right"></i></a></li> -->
                 <li class="dropdown-item"><a href="/gnoincoun/onlineCnsList.do">온라인상담<i class="fa fa-caret-right"></i></a></li>
-                <li class="dropdown-item"><a href="/gnoincoun/comfCnsWrite.do">맘편한 상담<i class="fa fa-caret-right"></i></a></li>
+                <!--  <li class="dropdown-item"><a href="/gnoincoun/comfCnsWrite.do">맘편한 상담<i class="fa fa-caret-right"></i></a></li> -->
                 <li class="dropdown-item"><a href="/gnoincoun/psyInfo.do">간편한 심리검사<i class="fa fa-caret-right"></i></a></li>
                 <!-- <li class="dropdown-item"><a href="/gnoincoun/eduAppWrite.do">교육신청<i class="fa fa-caret-right"></i></a></li> -->
               </ul>

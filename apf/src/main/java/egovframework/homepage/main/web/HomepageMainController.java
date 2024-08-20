@@ -2,9 +2,7 @@ package egovframework.homepage.main.web;
 
 import java.security.Key;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -17,7 +15,6 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springmodules.validation.commons.DefaultBeanValidator;
 
 import egovframework.homepage.cmSpace.service.CmSpaceVO;
@@ -29,14 +26,11 @@ import egovframework.homepage.main.service.PopupVO;
 import egovframework.rte.fdl.property.EgovPropertyService;
 import egovframework.rte.psl.dataaccess.util.EgovMap;
 import egovframework.user.main.service.MainDefaultVO;
-
 @Controller
 public class HomepageMainController {
-
 	/** homepageMainService */
 	@Resource(name = "homepageMainService")
 	private HomepageMainService homepageMainService;
-
 	/** homepageMainService */
 	@Resource(name = "homepageCmSpaceService")
 	private HomepageCmSpaceService homepageCmSpaceService;
@@ -44,7 +38,6 @@ public class HomepageMainController {
 	/** EgovPropertyService */
 	@Resource(name = "propertiesService")
 	protected EgovPropertyService propertiesService;
-
 	/** Validator */
 	@Resource(name = "beanValidator")
 	protected DefaultBeanValidator beanValidator;
@@ -56,7 +49,6 @@ public class HomepageMainController {
 	private static final String IS_MOBILE = "MOBI";
 	private static final String IS_PC = "PC";
 	
-
 	/**
 	 * 글 목록을 조회한다. (pageing)
 	 * @param searchVO - 조회할 정보가 담긴 SampleDefaultVO
@@ -133,7 +125,6 @@ public class HomepageMainController {
 	public String actionLogin(@ModelAttribute("LoginVO") LoginVO vo,HttpServletRequest req, HttpServletResponse response,  ModelMap model) throws Exception {
 		
 		EgovMap resultVO = homepageMainService.actionLogin(vo);
-
 	    boolean loginPolicyYn = true;
 	    if (null != resultVO  && null != resultVO.get("userId") && loginPolicyYn) {
 	    	/*if(resultVO.get("useYn").equals("N")) {
@@ -147,7 +138,6 @@ public class HomepageMainController {
 	    	model.addAttribute("userVO",resultVO);
 	    	
 	    	return "redirect:/gnoincoun/homepageMainList.do?loginYn=Y";
-
 	    } else {
 	    	model.addAttribute("message", "일치하는 정보가 없습니다.");
 	    	return "redirect:/gnoincoun/login.do";
@@ -204,9 +194,27 @@ public class HomepageMainController {
 		}*/
 	    
 	}
-
 	@RequestMapping(value = "/login.do")
 	public String login(@ModelAttribute("searchVO") MainDefaultVO searchVO, ModelMap model, HttpServletRequest request) throws Exception {
+		
+		String ip = request.getHeader("X-Forwarded-For");
+		
+	    if (ip == null) {
+	        ip = request.getHeader("Proxy-Client-IP");
+	    }
+	    if (ip == null) {
+	        ip = request.getHeader("WL-Proxy-Client-IP");
+	    }
+	    if (ip == null) {
+	        ip = request.getHeader("HTTP_CLIENT_IP");
+	    }
+	    if (ip == null) {
+	        ip = request.getHeader("HTTP_X_FORWARDED_FOR");
+	    }
+	    if (ip == null) {
+	        ip = request.getRemoteAddr();
+	    }
+	    System.out.println("> Result : IP Address : "+ip);
 		
 		EgovMap map = (EgovMap)request.getSession().getAttribute("LoginVO");
 		if(map == null) {
@@ -217,7 +225,6 @@ public class HomepageMainController {
 		//메인페이지에 노출될 공지사항 리스트 조회
 		//List<?> mainList = mainService.selectMainList(searchVO);
 		//model.addAttribute("resultList", mainList);
-
 		return "/main/login.page";
 		// return "/login";
 	}
@@ -229,7 +236,6 @@ public class HomepageMainController {
 		String popupNum = request.getParameter("num") == null ? "" : request.getParameter("num");
 		String width = request.getParameter("width") == null ? "" : request.getParameter("width");
 		String height = request.getParameter("height") == null ? "" : request.getParameter("height");
-
 		model.addAttribute("filePath",filePath);
 		model.addAttribute("popupNum",popupNum);
 		model.addAttribute("width",width);
@@ -276,7 +282,6 @@ public class HomepageMainController {
 		} else {
 			model.addAttribute("loginYn", "Y");
 		}
-
 		return "/main/findIdPw.page";
 	}
 	
@@ -318,7 +323,6 @@ public class HomepageMainController {
 		List<EgovMap> centerList = homepageMainService.getCenterList(vo);
 		model.addAttribute("centerList",centerList);
 		return "jsonView";
-
 	}
 	
 	// ID,PW 찾기
@@ -332,7 +336,6 @@ public class HomepageMainController {
 			model.addAttribute("loginVo", map);
 		}*/
 		model.addAttribute("loginVo",map);
-
 		return "/layout/headerMenu.page";
 	}
 	
@@ -349,24 +352,4 @@ public class HomepageMainController {
 
 		return "/layout/siteMap.page";
 	}
-	
-	@RequestMapping(value = "/relatedCenterAjax.do")
-	public String getRelatedCenter(ModelMap model, HttpServletRequest request) throws Exception {
-		
-		EgovMap map = (EgovMap)request.getSession().getAttribute("LoginVO");
-		model.addAttribute("loginVo",map);
-		
-		String reloadtName = request.getParameter("reloadtName");
-		
-		System.out.println("reloadtName : "+reloadtName);
-		
-		List<EgovMap> resultList = homepageMainService.getRelatedCenter(reloadtName);
-		
-		model.addAttribute("resultMessage", "성공적으로 데이터를 전달합니다.");
-		model.addAttribute("resultList", resultList);
-		
-
-		return "jsonView";
-	}
-	
 }

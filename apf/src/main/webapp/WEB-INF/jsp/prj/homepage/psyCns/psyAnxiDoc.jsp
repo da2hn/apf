@@ -78,17 +78,88 @@
 				data : param,
 				dataType : "json",
 				success : function(json) {
-					alert("불안척도 심리검사 결과 점수는"+total+"점 입니다.");
+					showAlert(total);
+					//alert("불안척도 심리검사 결과 점수는"+total+"점 입니다.");
 				},
 				error : function(e) {
 					alert("서버와 통신 오류입니다.");
 				}
 			});
 		  }
-		}	  
+		}
+		
+		function showAlert(total) {
+            const alertHTML =
+            '<div class="alert-container">' +
+            '<h3 style="margin-top: 10px;">불안척도</h3>' +
+            '<div class="alert-header">&#9745; 검사결과</div>' +
+            '<div>귀하의 검사 결과는 ' + total + '점입니다.</div>' +
+            '<div class="alert-body">' +
+            '<div>• 정상(20점~44점)</div>' +
+            '<div>&nbsp;&nbsp;&nbsp;유의한 수준의 불안감이 보이지 않습니다.</div>' +
+            '<div>• 경미한 수준(45점~59점)</div>' +
+            '<div>&nbsp;&nbsp;&nbsp;경미한 수준의 불안감이 있습니다.</div>' +
+            '<div>• 심각한 수준(60점 이상)</div>' +
+            '<div>&nbsp;&nbsp;&nbsp;불안증상이 심각한 수준으로 볼 수 있습니다.</div>' +
+            '</div>' +
+            '<div class="alert-footer">' +
+            '자가검진의 결과가 정신과적 진단을 의미하는 것은 아닙니다.<br>' +
+            '점수와 관계없이 정신건강이 염려되는 경우 거주하시는 곳의<br>' +
+            '정신건강복지센터 혹은 정신건강의학과 등<br>' +
+            '전문가의 도움을 받아보시기 바랍니다.' +
+            '</div>' +
+            '<button class="close-btn" onclick="closeAlert()">닫기</button>' +
+            '</div>';
+            
+            const alertContainer = document.createElement('div');
+            alertContainer.innerHTML = alertHTML;
+            document.body.appendChild(alertContainer);
+        }
+
+        function closeAlert() {
+        	const alertContainer = document.querySelector('.alert-container');
+            if (alertContainer) {
+                alertContainer.parentNode.removeChild(alertContainer);
+            } 
+        }
+
   </script>
 <style>
 	#wrap {width: 70%; margin: auto;}
+	.alert-container {
+            position: fixed;
+			top: 32%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 470px;
+			padding: 20px;
+			background-color: white;
+			border: 1px solid #ccc;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+			z-index: 1000;
+        }
+        .alert-header {
+            font-weight: bold;
+			font-size: 17px;
+            margin-bottom: 10px;
+        }
+        .alert-body {
+            background-color: #e6f0ff;
+            padding: 10px;
+			margin: 10px;
+        }
+        .alert-footer {
+            font-size: 15px;
+            color: #555;
+        }
+        .close-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            float: right;
+        }
 </style>
 <section class="service-2 section">
 	<div id="wrap">
@@ -96,6 +167,7 @@
    	<form id="frm" name="frm" method="post">
    	  <input type="hidden" id="cnsleId" name="cnsleId" value="${sessionScope.LoginVO.userId}" >
       <div class="table-wrap">
+          <!-- 
            <table class="table table-condensed">
                <caption>불안척도</caption>
                <colgroup>
@@ -123,6 +195,7 @@
                    </tr>
                </tbody>
            </table>
+           -->
            </div>
            <div class="txt mt15">
                ※ 지난 한 주 동안의 느낌에 ‘√’표 하세요.
