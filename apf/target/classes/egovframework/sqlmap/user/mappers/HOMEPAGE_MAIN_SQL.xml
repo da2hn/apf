@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="egovframework.homepage.main.service.impl.HomepageMainMapper">
-
 	<!-- 로그인 정보  -->
 	<select id="actionLogin" parameterType="loginVO" resultType="EgovMap">
 		SELECT
@@ -110,7 +109,7 @@
 			H.HCLASS_CD = #{hclassCd}
 			AND M.USE_YN = 'Y' 
 		ORDER BY M.MCLASS_CD ASC
-		
+
 	</select>
-	
+
 </mapper>
