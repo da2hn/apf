@@ -1,5 +1,4 @@
 package egovframework.homepage.main.service.impl;
-
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -14,10 +13,8 @@ import egovframework.homepage.main.service.HomepageMainService;
 import egovframework.homepage.main.service.LoginVO;
 import egovframework.rte.fdl.cmmn.EgovAbstractServiceImpl;
 import egovframework.rte.psl.dataaccess.util.EgovMap;
-
 @Service("homepageMainService")
 public class HomepageMainServiceImpl extends EgovAbstractServiceImpl implements HomepageMainService {
-
 	private static final Logger LOGGER = LoggerFactory.getLogger(HomepageMainServiceImpl.class);
 	
 	/** SampleDAO */
@@ -41,7 +38,6 @@ public class HomepageMainServiceImpl extends EgovAbstractServiceImpl implements 
 		} catch (Exception e) {
 			utility.func.Logging(this.getClass().getName(), e);
 			return null;
-
 		}
     }
 	
@@ -75,9 +71,4 @@ public class HomepageMainServiceImpl extends EgovAbstractServiceImpl implements 
 		return homepageMainMapper.getCenterList(centerVO);
 	}
 
-	@Override
-	public List<EgovMap> getRelatedCenter(String reloadtName) {
-		return homepageMainMapper.getRelatedCenter(reloadtName);
-	}
-	
 }

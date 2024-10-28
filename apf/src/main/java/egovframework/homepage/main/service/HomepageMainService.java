@@ -1,11 +1,8 @@
 package egovframework.homepage.main.service;
-
 import java.util.List;
 
 import egovframework.rte.psl.dataaccess.util.EgovMap;
-
 public interface HomepageMainService {
-
 	// 로그인 정보
 	EgovMap actionLogin(LoginVO vo) throws Exception;
 	
@@ -26,8 +23,5 @@ public interface HomepageMainService {
 	
 	// 센터 검색
 	List<EgovMap> getCenterList(CenterVO centerVO);
-	
-	// 유관기관
-	List<EgovMap> getRelatedCenter(String reloadtName);
-	
+
 }

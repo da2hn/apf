@@ -18,12 +18,13 @@
   			var mobile = $("#mobile").val().replace(/ /gi, ""); // 핸드폰
   			var addr = $("#addr").val().replace(/ /gi, ""); // 주소
   			
-  			
+  			/*
   			if($("input:radio[name='joinPath']").is(":checked") == false) {
   				alert("가입경로를 체크해 주세요.");
   				$("#joinPath").focus();
   				return;
   			}
+  			*/
   			if(userId.length == 0) {
   				alert("아이디를 입력해 주세요.");
   				$("#userId").focus();
@@ -77,11 +78,13 @@
   				$("#userNm").focus();
   				return;
   			}
+  			/*
   			if($("input:radio[name='gender']").is(":checked") == false) {
   				alert("성별을 체크해 주세요.");
   				$("#gender").focus();
   				return;
   			}
+  			*/
   			if(birthDt.length == 0) {
   				alert("생년월일을 입력해주세요.");
   				$("#birthDt").focus();
@@ -112,11 +115,13 @@
   				$("#mobile").focus();
   				return;
   			}
+  			/*
   			if(addr.length == 0) {
   				alert("주소를 입력해주세요.");
   				$("#addr").focus();
   				return;
   			}
+  			*/
   			
   			document.frm.action = "/gnoincoun/joinReg.do";
   			document.frm.submit();
@@ -161,7 +166,8 @@
 	<div id="wrap">
         <h2 class="title">개인정보</h2>
 	  	<form class="form-wrap" id="frm" name="frm" method="post">
-          <div class="form-group line bt bb pt15 pb10">
+        <%-- 
+        <div class="form-group line bt bb pt15 pb10">
             <label class="control-label" for="">가입경로</label>
             <div class="fr">
               <span class="radio-custom"><input type="radio" name="joinPath" id="joinPath1" value="I" checked="checked"><label for="joinPath1"><i></i><span>인터넷</span></label></span>
@@ -169,6 +175,7 @@
               <span class="radio-custom"><input type="radio" name="joinPath" id="joinPath3" value="T" ><label for="joinPath3"><i></i><span>TV</span></label></span>
             </div>
           </div>
+        --%>  
           <div class="form-group">
             <label for="userId">아이디<i class="cr">*</i></label>
             <div class="input-group">
@@ -184,7 +191,7 @@
             <label for="pwChk">비밀번호 확인<i class="cr">*</i></label>
             <input name="pwChk" id="pwChk" type="password" class="form-control" placeholder="Password" maxlength="20">
           </div>
-          
+          <%--
 		  <div class="form-group">
 		  	   <label for="pwChk">시군구분<i class="cr">*</i></label>
                <select class="form-control" id="sigunCd" name="sigunCd">
@@ -201,10 +208,12 @@
 					</c:forEach>
 				</select>
 		  </div>
+           --%>
           <div class="form-group">
             <label class="control-label" for="userNm">성명<i class="cr">*</i></label>
             <input type="text" id="userNm" name="userNm" class="form-control" maxlength="8" onlyKorean oninput="this.value = this.value.replace(/[^ㄱ-힣]/, '');">
           </div>
+          <%--
           <div class="form-group line bb pb10">
             <label class="control-label" for="">성별<i class="cr">*</i></label>
             <div class="fr">
@@ -212,6 +221,7 @@
               <span class="radio-custom"><input type="radio" name="gender" id="gender2" value="F" ><label for="gender2"><i></i><span>여</span></label></span>
             </div>
           </div>
+           --%>
           <div class="form-group">
             <label class="control-label" for="birthDt">생년월일<i class="cr">*</i></label>
             <input type="text" id="birthDt" name="birthDt" class="form-control" placeholder="19810101" maxlength="8" value="${map.birthDt }" oninput="this.value = this.value.replace(/[^0-9]/, '');">
@@ -225,10 +235,12 @@
             <label class="control-label" for="telNo">연락처<i class="cr">*</i></label>
             <input type="text" class="form-control" id="tel" name="tel">
           </div> -->
+          <%--
           <div class="form-group">
             <label class="control-label" for="email">이메일</label>
             <input type="text" class="form-control" id="email" name="email" maxlength="30" value="${map.email }">
           </div>
+           --%>
           <!-- <div class="form-group">
             <label class="control-label" for="tel">전화번호<i class="cr">*</i></label>
             <input type="text" class="form-control" id="tel" name="tel" maxlength="20" oninput="this.value = this.value.replace(/[^0-9]/, '');">
@@ -237,12 +249,14 @@
             <label class="control-label" for="mobile">전화번호<i class="cr">*</i></label>
             <input type="text" class="form-control" id="mobile" name="mobile" maxlength="20" value="${map.mobile }" oninput="this.value = this.value.replace(/[^0-9]/, '');">
           </div>
+          <%--
           <div class="form-group">
             <label class="control-label" for="addr">주소<i class="cr">*</i></label>
             <input type="text" class="form-control" id="addr" name="addr" maxlength="40" value="${map.addr }">
             <!-- <input type="text" class="form-control mt5" id="">
             <input type="text" class="form-control mt5" id=""> -->
           </div>
+           --%>
           <div class="btn-wrap line bt pt20">
             <button type="button" class="btn btn-primary btn-lg w100p" onclick="javascript:fn_reg();">회원가입</button>
             <button type="button" class="btn btn-primary btn-lg w100p" onclick="location.href='/gnoincoun/login.do'" style="color: #fff; background-color: #78849E; border-color: #78849E;">로그인</button>

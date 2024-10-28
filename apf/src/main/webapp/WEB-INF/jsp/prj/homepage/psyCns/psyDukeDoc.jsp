@@ -52,7 +52,8 @@
 				data : param,
 				dataType : "json",
 				success : function(json) {
-					alert("DUKE-AD 심리검사 결과 점수는"+total+"점 입니다.");
+					showAlert(total);
+					//alert("DUKE-AD 심리검사 결과 점수는"+total+"점 입니다.");
 				},
 				error : function(e) {
 					alert("서버와 통신 오류입니다.");
@@ -61,9 +62,77 @@
 		  }
 		}
 	  
+	  function showAlert(total) {
+          const alertHTML =
+          '<div class="alert-container">' +
+          '<h3 style="margin-top: 10px;">듀크 불안-우울척도</h3>' +
+          '<div class="alert-header">&#9745; 검사결과</div>' +
+          '<div>귀하의 검사 결과는 ' + total + '점입니다.</div>' +
+          '<div class="alert-body">' +
+          '<div>• 정상(5점 미만)</div>' +
+          '<div>&nbsp;&nbsp;&nbsp;유의한 수준의 우울감이 보이지 않습니다.</div>' +
+          '<div>• 심각한 수준(5점~7점)</div>' +
+          '<div>&nbsp;&nbsp;&nbsp;불안이나 우울이 심각한 수준일 수 있습니다.</div>' +
+          '<div>• 매우 심각한 수준(8점 이상)</div>' +
+          '<div>&nbsp;&nbsp;&nbsp;불안이나 우울이 매우 심각한 수준으로 볼 수 있습니다.</div>' +
+          '</div>' +
+          '<div class="alert-footer">' +
+          '자가검진의 결과가 정신과적 진단을 의미하는 것은 아닙니다.<br>' +
+          '점수와 관계없이 정신건강이 염려되는 경우 거주하시는 곳의<br>' +
+          '정신건강복지센터 혹은 정신건강의학과 등<br>' +
+          '전문가의 도움을 받아보시기 바랍니다.' +
+          '</div>' +
+          '<button class="close-btn" onclick="closeAlert()">닫기</button>' +
+          '</div>';
+          
+          const alertContainer = document.createElement('div');
+          alertContainer.innerHTML = alertHTML;
+          document.body.appendChild(alertContainer);
+      }
+
+      function closeAlert() {
+      	const alertContainer = document.querySelector('.alert-container');
+          if (alertContainer) {
+              alertContainer.parentNode.removeChild(alertContainer);
+          } 
+      }
   </script>
 <style>
 	#wrap {width: 70%; margin: auto;}
+	.alert-container {
+            position: fixed;
+			top: 32%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 470px;
+			padding: 20px;
+			background-color: white;
+			border: 1px solid #ccc;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+			z-index: 1000;
+        }
+        .alert-header {
+            font-weight: bold;
+			font-size: 17px;
+            margin-bottom: 10px;
+        }
+        .alert-body {
+            background-color: #e6f0ff;
+            padding: 10px;
+			margin: 10px;
+        }
+        .alert-footer {
+            font-size: 15px;
+            color: #555;
+        }
+        .close-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            float: right;
+        }
 </style>
 <section class="service-2 section">
 	<div id="wrap">
@@ -71,6 +140,7 @@
       <form id="frm" name="frm" method="post">
       <input type="hidden" id="cnsleId" name="cnsleId" value="${sessionScope.LoginVO.userId}" >
       <div class="table-wrap">
+      		<!-- 
       		<table class="table table-condensed">
                 <caption>DUKE-AD</caption>
                 <colgroup>
@@ -115,6 +185,7 @@
                     </tr>
                 </tbody>
             </table>
+      		 -->
             <div class="txt mt15">
                 ※ 다음은 당신의 건강과 느낌에 대한 질문입니다. 각 문항을 자세히 읽고 당신이 느끼는 가장 적합한 곳에 ‘√’표 해 주십시오.<br>
                 다음 문항에 맞거나 틀린 답은 없습니다.

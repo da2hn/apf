@@ -52,12 +52,15 @@
 			<div style="width: 100%; margin: auto; text-align: center; margin-top: 30px; margin-bottom: 30px;">
 				<button type="button" class="btn btn-primary sub-menu" onclick="javascript: operatingBtn('1')"><font size = "4px">소개</font></button>
 				<button type="button" class="btn btn-primary sub-menu" onclick="javascript: operatingBtn('2')"><font size = "4px">설립목적</font></button>
-				<button type="button" class="btn btn-primary sub-menu" onclick="javascript: operatingBtn('3')"><font size = "4px">주요사업</font></button>
-				<button type="button" class="btn btn-primary sub-menu" onclick="javascript: operatingBtn('4')"><font size = "4px">조직도</font></button>
+			<%--<button type="button" class="btn btn-primary sub-menu" onclick="javascript: operatingBtn('3')"><font size = "4px">주요사업</font></button>
+				<button type="button" class="btn btn-primary sub-menu" onclick="javascript: operatingBtn('4')"><font size = "4px">조직도</font></button>--%>
 			</div>
 			
 			<div id="operating1" class="menu">
-				<img src='/gnoincoun/images/cenIntro6.png' alt="내방상담" style="width: 920px;"/>
+					<img src='/gnoincoun/images/cenIntro6.png' alt="내방상담" style="width: 920px;" usemap="#example-map"/>
+					<map name="example-map">
+					    <area shape="rect" coords="471,335,767,552" alt="Section1" href="https://gg.pass.or.kr">
+					</map>
 			</div>
 			<div id="operating2" style="width: 920px; margin: auto;">
 				<img src='/gnoincoun/images/cenIntro15.png' alt="내방상담" style="width: 920px;"/> 
