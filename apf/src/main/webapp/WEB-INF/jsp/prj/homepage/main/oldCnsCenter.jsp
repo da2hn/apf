@@ -81,7 +81,7 @@
                     <li onmouseover="javascript:selectGigan('2');">서부권역<em>11</em></li>
                     <li onmouseover="javascript:selectGigan('3');">남부권역<em>12</em></li>
                     <li onmouseover="javascript:selectGigan('4');">북부권역<em>13</em></li>
-                    <li onmouseover="javascript:selectGigan('5');">중부권역<em>15</em></li>
+                    <li onmouseover="javascript:selectGigan('5');">중부권역<em>16</em></li>
                   </ul>
                 </div>
                 <div class="implication">

@@ -1391,8 +1391,8 @@ table.table-condensed{
 						src="/gnoincoun/images/banner_07.png" alt="24시노인온상담" /></a></li>
 				<!--  <li><a href="/gnoincoun/busiIntroList.do?gubun=gender"><img
 						src="/gnoincoun/images/banner_08.png" alt="성인지교육사업" /></a></li> -->
-				<li><a href="/gnoincoun/sigunSupport.do"><img
-						src="/gnoincoun/images/banner_09.png" alt="중장년상담" style = "width:310px; height:190px;"/></a></li>
+				<li><a href="/gnoincoun/middleCns.do"><img
+						src="/gnoincoun/images/banner_09.png" alt="베이비부머 마음돌봄 전화상담" style = "width:310px; height:190px;"/></a></li>
 			</div>
 		</div>
 		<div id="rightQuick" style="margin-left: 760px;">

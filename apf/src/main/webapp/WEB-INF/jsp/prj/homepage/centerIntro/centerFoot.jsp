@@ -60,6 +60,18 @@
 					<p><span> 2024 </span></p>
 					<ul>
 						<li>
+							<strong>9월</strong>
+							<span> 2024년 경기도노인종합상담센터 홍보영상 제작 </span>
+						</li>
+						
+						<li>
+							<strong>7월</strong>
+							<span>(사)경기도지체장애인협회 업무협약<br>
+								       베이비부머 마음돌봄 전화상담 홍보영상 제작
+							 </span>
+						</li>
+						
+						<li>
 							<strong>4월</strong>
 							<span>2024 경기도 노인 마음돌봄사업 “남성 어르신 희망네트워크 사업” 운영 </span>
 						</li>
