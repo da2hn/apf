@@ -23,6 +23,11 @@
     <![endif]-->
     <!-- Custom styles for this template -->
     <link href="/gnoincoun/assets/css/theme.css" rel="stylesheet">
+      <style>
+	  	#cntn::placeholder {
+		  color: red;
+		}
+	  </style>
   </head>
   <script>
   
@@ -95,7 +100,7 @@
           </div>
           <div class="form-group">
             <label class="control-label" for="cntn">내용</label>
-            <textarea rows="5" class="form-control" id="cntn" name="cntn"></textarea>
+            <textarea rows="5" class="form-control" id="cntn" name="cntn" placeholder="자세한 상담을 희망하실 경우 전화번호를 남겨주시기 바랍니다."></textarea>
           </div>
           <!-- 파일첨부 -->
           <!-- <div class="form-group clearfix">

@@ -90,24 +90,101 @@
 				data : param,
 				dataType : "json",
 				success : function(json) {
-					alert("GDS-SI 심리검사 결과 점수는"+total+"점 입니다.");
-					alert("자살사고 심리검사 결과 점수는"+total2+"점 입니다.");
+					showAlert(total, total2);
+					//alert("GDS-SI 심리검사 결과 점수는"+total+"점 입니다.");
+					//alert("자살사고 심리검사 결과 점수는"+total2+"점 입니다.");
 				},
 				error : function(e) {
 					alert("서버와 통신 오류입니다.");
 				}
 			});
 		  }
-		}	  
+		}
+		
+		function showAlert(total, total2) {
+            const alertHTML =
+            '<div class="alert-container">' +
+            '<h3 style="margin-top: 10px;">노인우울 및 자살사고 척도</h3>' +
+            '<div class="alert-header">&#9745; 검사결과</div>' +
+            '<div>귀하의 우울검사 결과는 ' + total + '점입니다.</div>' +
+            '<div class="alert-body">' +
+            '<div>• 정상(5점미만)</div>' +
+            '<div>&nbsp;&nbsp;&nbsp;유의한 수준의 우울감이 보이지 않습니다.</div>' +
+            '<div>• 경미한 수준(5점~9점)</div>' +
+            '<div>&nbsp;&nbsp;&nbsp;경미한 수준의 우울감이 있습니다.</div>' +
+            '<div>• 심각한 수준(10점 이상)</div>' +
+            '<div>&nbsp;&nbsp;&nbsp;우울증상이 심각한 수준으로 볼 수 있습니다.</div>' +
+            '</div>' +
+            '<div>귀하의 자살사고검사 결과는 ' + total2 + '점입니다.</div>' +
+            '<div class="alert-body">' +
+            '<div>• 고위험군(2점 이상)</div>' +
+            '<div>&nbsp;&nbsp;&nbsp;심각한 수준으로 볼 수 있습니다.</div>' +
+            '<div>&nbsp;&nbsp;&nbsp;정신건강복지센터 혹은 전문기관의 도움을 받아보시기 바랍니다.</div>' +
+            '</div>' +
+            '<div class="alert-footer">' +
+            '자가검진의 결과가 정신과적 진단을 의미하는 것은 아닙니다.<br>' +
+            '점수와 관계없이 정신건강이 염려되는 경우 거주하시는 곳의<br>' +
+            '정신건강복지센터 혹은 정신건강의학과 등<br>' +
+            '전문가의 도움을 받아보시기 바랍니다.' +
+            '</div>' +
+            '<button class="close-btn" onclick="closeAlert()">닫기</button>' +
+            '</div>';
+            
+            const alertContainer = document.createElement('div');
+            alertContainer.innerHTML = alertHTML;
+            document.body.appendChild(alertContainer);
+        }
+
+        function closeAlert() {
+        	const alertContainer = document.querySelector('.alert-container');
+            if (alertContainer) {
+                alertContainer.parentNode.removeChild(alertContainer);
+            } 
+        }
   </script>
 <style>
 	#wrap {width: 70%; margin: auto;}
+	.alert-container {
+            position: fixed;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 517px;
+			padding: 20px;
+			background-color: white;
+			border: 1px solid #ccc;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+			z-index: 1000;
+        }
+        .alert-header {
+            font-weight: bold;
+			font-size: 17px;
+            margin-bottom: 10px;
+        }
+        .alert-body {
+            background-color: #e6f0ff;
+            padding: 10px;
+			margin: 10px;
+        }
+        .alert-footer {
+            font-size: 15px;
+            color: #555;
+        }
+        .close-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            float: right;
+        }
 </style>
 <section class="service-2 section">
 	<div id="wrap">
         <h2 class="title">노인우울 및 자살사고 척도</h2>
 	      <form id="frm" name="frm" method="post">
 	      <input type="hidden" id="cnsleId" name="cnsleId" value="${sessionScope.LoginVO.userId}" >
+            <!-- 
             <table class="table table-condensed">
                 <caption>노인우울및자살사고척도</caption>
                 <colgroup>
@@ -142,6 +219,7 @@
                     </tr>
                 </tbody>
             </table>
+             -->
             <div class="tbl-title mt20">
                 ◉ 단축형노인우울척도(S-GDS)
             </div>

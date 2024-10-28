@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="egovframework.homepage.main.service.impl.HomepageMainMapper">
-
 	<!-- 로그인 정보  -->
 	<select id="actionLogin" parameterType="loginVO" resultType="EgovMap">
 		SELECT
@@ -110,24 +109,7 @@
 			H.HCLASS_CD = #{hclassCd}
 			AND M.USE_YN = 'Y' 
 		ORDER BY M.MCLASS_CD ASC
-		
+
 	</select>
-	
-	<!-- 분류관리 상세보기(중분류)  -->
-	<select id="getRelatedCenter" parameterType="String" resultType="egovMap">
-	
-		SELECT 
-			rel_org_nm , 
-			addr , 
-			addr_dtl , 
-			tel, 
-			url 
-		from gs_rel_org_m
-		WHERE rel_org_gb IN('gb1','gb13') 
-		AND addr = #{reloadtName}
-		AND rel_org_nm LIKE '%관'
-		ORDER BY rel_org_nm
-		
-	</select>
-	
+
 </mapper>

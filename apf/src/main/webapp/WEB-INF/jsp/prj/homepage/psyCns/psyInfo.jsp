@@ -26,6 +26,7 @@
 		}
 		
 		function fn_move(url) {
+			  /*
 			  var loginYn = "${loginYn}";
 			  if(loginYn == "Y") {
 				  location.href=url;			  
@@ -33,6 +34,8 @@
 				  alert("로그인 후에 간편한 심리검사를 하실 수 있습니다.");
 				  // location.href="/login.do";
 			  }
+			  */
+				location.href=url;			  
 		  }
 	 
 		

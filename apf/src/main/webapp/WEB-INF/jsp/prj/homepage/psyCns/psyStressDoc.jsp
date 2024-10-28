@@ -79,23 +79,91 @@
 				data : param,
 				dataType : "json",
 				success : function(json) {
-					alert("스트레스척도 심리검사 결과 점수는"+total+"점 입니다.");
+					showAlert(total);
+					//alert("스트레스척도 심리검사 결과 점수는"+total+"점 입니다.");
 				},
 				error : function(e) {
 					alert("서버와 통신 오류입니다.");
 				}
 			});
 		  }
-		}	  
+		}
+		
+		function showAlert(total) {
+            const alertHTML =
+            '<div class="alert-container">' +
+            '<h3 style="margin-top: 10px;">스트레스척도</h3>' +
+            '<div class="alert-header">&#9745; 검사결과</div>' +
+            '<div>귀하의 검사 결과는 ' + total + '점입니다.</div>' +
+            '<div class="alert-body">' +
+            '<div>• 점수가 높을수록 스트레스의 정도가 크다는 것을 의미합니다.</div>' +
+            '<div>• 심각한 수준(102점 이상)</div>' +
+            '<div>&nbsp;&nbsp;&nbsp;스트레스로 인해 일상생활에서의 어려움이 나타날 수 있습니다.</div>' +
+            '</div>' +
+            '<div class="alert-footer">' +
+            '자가검진의 결과가 정신과적 진단을 의미하는 것은 아닙니다.<br>' +
+            '점수와 관계없이 정신건강이 염려되는 경우 거주하시는 곳의<br>' +
+            '정신건강복지센터 혹은 정신건강의학과 등<br>' +
+            '전문가의 도움을 받아보시기 바랍니다.' +
+            '</div>' +
+            '<button class="close-btn" onclick="closeAlert()">닫기</button>' +
+            '</div>';
+            
+            const alertContainer = document.createElement('div');
+            alertContainer.innerHTML = alertHTML;
+            document.body.appendChild(alertContainer);
+        }
+
+        function closeAlert() {
+        	const alertContainer = document.querySelector('.alert-container');
+            if (alertContainer) {
+                alertContainer.parentNode.removeChild(alertContainer);
+            } 
+        }
   </script>
 <style>
 	#wrap {width: 70%; margin: auto;}
+	.alert-container {
+            position: fixed;
+			top: 27%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 502px;
+			padding: 20px;
+			background-color: white;
+			border: 1px solid #ccc;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+			z-index: 1000;
+        }
+        .alert-header {
+            font-weight: bold;
+			font-size: 17px;
+            margin-bottom: 10px;
+        }
+        .alert-body {
+            background-color: #e6f0ff;
+            padding: 10px;
+			margin: 10px;
+        }
+        .alert-footer {
+            font-size: 15px;
+            color: #555;
+        }
+        .close-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            float: right;
+        }
 </style>
 <section class="service-2 section">
 	<div id="wrap">
         <h2 class="title">스트레스척도</h2>
       	<form id="frm" name="frm" method="post">
       	   <input type="hidden" id="cnsleId" name="cnsleId" value="${sessionScope.LoginVO.userId}" >
+            <!-- 
             <table class="table table-condensed">
                 <caption>스트레스척도</caption>
                 <colgroup>
@@ -123,6 +191,7 @@
                     </tr>
                 </tbody>
             </table>
+             -->
             <div class="txt mt15">
                 ※ 다음은 어르신이 평상시 일상생활에서 경험할 수 있는 것들입니다. <span class="txt-Under">“지난 1년 동안”</span>을 돌이켜 보면서 어르신께서 경험을 통해서 마음이 얼마나 상하였는지 어르신의 느낌이나 생각과 잘 맞는 곳에 ‘√’표 해주십시오.
             </div>
