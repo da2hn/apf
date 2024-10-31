@@ -504,6 +504,12 @@
                           <td> 031-620-2810 </td>
                           <td><a href="http://www.pangyonoin.or.kr" target="_blank"><img src="/gnoincoun/assets/img/blit_internet.png"></a></td>
                       </tr>
+					  <tr>
+                          <td> 팔달노인복지관 </td>
+                          <td class="l"> 경기도 수원시 팔달구 수원천로 343 </td>
+                          <td> 031-248-3800 </td>
+                          <td><a href="http://www.pdsenior.or.kr/" target="_blank"><img src="/gnoincoun/assets/img/blit_internet.png"></a></td>
+                      </tr>
                       <tr>
                           <td> SK청솔노인복지관 </td>
                           <td class="l"> 경기도 수원시 장안구 장안로 174 </td>
@@ -516,12 +522,12 @@
                           <td> 031-602-1360 </td>
                           <td><a href="http://ypinetree.or.kr" target="_blank"><img src="/gnoincoun/assets/img/blit_internet.png"></a></td>
                       </tr>
-                       <tr>
-                          <td> 팔달노인복지관 </td>
-                          <td class="l"> 경기도 수원시 팔달구 수원천로 343 </td>
-                          <td> 031-248-3800 </td>
-                          <td><a href="http://www.pdsenior.or.kr/" target="_blank"><img src="/gnoincoun/assets/img/blit_internet.png"></a></td>
-                      </tr>
+			          <tr>
+			              <td> 화성시정조효노인복지관 </td>
+			              <td class="l"> 경기도 화성시 용주로 152번길 27 </td>
+			              <td> 031-898-9833 </td>
+			              <td><a href="https://www.jjhyo.or.kr/index.do" target="_blank"><img src="/gnoincoun/assets/img/blit_internet.png"></a></td>
+			          </tr>
                    </tbody>
                   </table>
                   </div>

@@ -1459,7 +1459,7 @@ table.table-condensed{
 			                    <li onmouseover="javascript:selectGigan('2');">서부권역<em>11</em></li>
 			                    <li onmouseover="javascript:selectGigan('3');">남부권역<em>12</em></li>
 			                    <li onmouseover="javascript:selectGigan('4');">북부권역<em>13</em></li>
-			                    <li onmouseover="javascript:selectGigan('5');">중부권역<em>15</em></li>
+			                    <li onmouseover="javascript:selectGigan('5');">중부권역<em>16</em></li>
 			                  </ul>
 			                </div>
 			                <div class="implication">
@@ -1883,6 +1883,12 @@ table.table-condensed{
 			                          <td><a href="http://www.pangyonoin.or.kr" target="_blank"><img src="/gnoincoun/assets/img/blit_internet.png"></a></td>
 			                      </tr>
 			                      <tr>
+			                          <td> 팔달노인복지관 </td>
+			                          <td class="l"> 경기도 수원시 팔달구 수원천로 343 </td>
+			                          <td> 031-248-3800 </td>
+			                          <td><a href="http://www.pdsenior.or.kr/" target="_blank"><img src="/gnoincoun/assets/img/blit_internet.png"></a></td>
+			                      </tr>
+			                      <tr>
 			                          <td> SK청솔노인복지관 </td>
 			                          <td class="l"> 경기도 수원시 장안구 장안로 174 </td>
 			                          <td> 070-4014-3955 </td>
@@ -1894,11 +1900,11 @@ table.table-condensed{
 			                          <td> 031-602-1360 </td>
 			                          <td><a href="http://ypinetree.or.kr" target="_blank"><img src="/gnoincoun/assets/img/blit_internet.png"></a></td>
 			                      </tr>
-			                       <tr>
-			                          <td> 팔달노인복지관 </td>
-			                          <td class="l"> 경기도 수원시 팔달구 수원천로 343 </td>
-			                          <td> 031-248-3800 </td>
-			                          <td><a href="http://www.pdsenior.or.kr/" target="_blank"><img src="/gnoincoun/assets/img/blit_internet.png"></a></td>
+			                      <tr>
+			                          <td> 화성시정조효노인복지관 </td>
+			                          <td class="l"> 경기도 화성시 용주로 152번길 27 </td>
+			                          <td> 031-898-9833 </td>
+			                          <td><a href="https://www.jjhyo.or.kr/index.do" target="_blank"><img src="/gnoincoun/assets/img/blit_internet.png"></a></td>
 			                      </tr>
 			                   </tbody>
 			                  </table>
