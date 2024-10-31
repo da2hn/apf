@@ -1385,9 +1385,9 @@ table.table-condensed{
 		</div>
 		<div class='wrap main-content'>
 			<div class='banner-box-02'>
-				<li><a href="/gnoincoun/busiIntroList.do"><img
+				<li><a href="/gnoincoun/sigunSupport.do"><img
 						src="/gnoincoun/images/banner_06.png" alt="시군지원사업" /></a></li>
-				<li><a href="/gnoincoun/busiIntroList.do?gubun=noin"><img
+				<li><a href="/gnoincoun/noin24.do"><img
 						src="/gnoincoun/images/banner_07.png" alt="24시노인온상담" /></a></li>
 				<!--  <li><a href="/gnoincoun/busiIntroList.do?gubun=gender"><img
 						src="/gnoincoun/images/banner_08.png" alt="성인지교육사업" /></a></li> -->
