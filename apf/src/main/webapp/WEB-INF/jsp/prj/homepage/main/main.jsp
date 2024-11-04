@@ -1804,12 +1804,12 @@ table.table-condensed{
 			                          <th> 전화번호 </th>
 			                          <th> 홈페이지 </th>
 			                      </tr>
-			                      <tr>
+<!-- 			                      <tr>
 			                          <td> 경기도노인종합상담센터 </td>
 			                          <td class="l"> 경기도 수원시 장안구 경수대로 1150 </td>
 			                          <td> 031-222-1360 </td>
 			                          <td><a href="https://www.gg.go.kr/gnoincoun" target="_blank"><img src="/gnoincoun/assets/img/blit_internet.png"></a></td>
-			                      </tr>
+			                      </tr> -->
 			                      <tr>
 			                          <td> 과천시노인복지관 </td>
 			                          <td class="l"> 경기도 과천시 문원로 57 </td>
