@@ -79,9 +79,9 @@
                   <ul>
                     <li onmouseover="javascript:selectGigan('1');">동부권역<em>11</em></li>
                     <li onmouseover="javascript:selectGigan('2');">서부권역<em>11</em></li>
-                    <li onmouseover="javascript:selectGigan('3');">남부권역<em>12</em></li>
+                    <li onmouseover="javascript:selectGigan('3');">남부권역<em>13</em></li>
                     <li onmouseover="javascript:selectGigan('4');">북부권역<em>13</em></li>
-                    <li onmouseover="javascript:selectGigan('5');">중부권역<em>16</em></li>
+                    <li onmouseover="javascript:selectGigan('5');">중부권역<em>15</em></li>
                   </ul>
                 </div>
                 <div class="implication">
@@ -242,7 +242,7 @@
                   </tbody></table>
                   </div>
                   <div id="details3" class="details table-responsive" style="display: none;">
-                    <h4>남부권역<em>12개 기관</em></h4>
+                    <h4>남부권역<em>13개 기관</em></h4>
                     <table class="table table-condensed">
                       <tbody>
                         <tr>
@@ -323,6 +323,11 @@
                             <td> 031-8077-2605 </td>
                             <td><a href="https://www.hs-seobu.or.kr/" target="_blank"><img src="/gnoincoun/assets/img/blit_internet.png"></a></td>
                         </tr>
+			                <td> 화성시정조효노인복지관 </td>
+			                <td class="l"> 경기도 화성시 용주로 152번길 27 </td>
+			                <td> 031-898-9833 </td>
+			                <td><a href="https://www.jjhyo.or.kr/index.do" target="_blank"><img src="/gnoincoun/assets/img/blit_internet.png"></a></td>
+						</tr>						
                       </tbody>
                     </table>
                   </div>
@@ -417,7 +422,7 @@
                   </tbody></table>
                   </div>
                   <div id="details5" class="details table-responsive" style="display: none;">
-                    <h4>중부권역<em>16개 기관</em> </h4>
+                    <h4>중부권역<em>15개 기관</em> </h4>
                     <table class="table table-condensed">
                       <tbody>
                         <tr>
@@ -426,7 +431,7 @@
                           <th> 전화번호 </th>
                           <th> 홈페이지 </th>
                       </tr>
-<!--                       <tr>
+<!--                      <tr>
                           <td> 경기도노인종합상담센터 </td>
                           <td class="l"> 경기도 수원시 장안구 경수대로 1150 </td>
                           <td> 031-222-1360 </td>
@@ -522,12 +527,6 @@
                           <td> 031-602-1360 </td>
                           <td><a href="http://ypinetree.or.kr" target="_blank"><img src="/gnoincoun/assets/img/blit_internet.png"></a></td>
                       </tr>
-			          <tr>
-			              <td> 화성시정조효노인복지관 </td>
-			              <td class="l"> 경기도 화성시 용주로 152번길 27 </td>
-			              <td> 031-898-9833 </td>
-			              <td><a href="https://www.jjhyo.or.kr/index.do" target="_blank"><img src="/gnoincoun/assets/img/blit_internet.png"></a></td>
-			          </tr>
                    </tbody>
                   </table>
                   </div>
